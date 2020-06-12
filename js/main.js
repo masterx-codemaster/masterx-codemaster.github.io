@@ -64,6 +64,29 @@
 	      }
 	    }
 		});
+		$('.offline').owlCarousel({
+			loop:false,
+			autoplay: false,
+			margin:0,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+			nav:false,
+			dots: false,
+			autoplayHoverPause: false,
+			items: 1,
+			navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+			responsive:{
+			  0:{
+				items:1
+			  },
+			  600:{
+				items:1
+			  },
+			  1000:{
+				items:1
+			  }
+			}
+			});
 		$('.carousel-testimony').owlCarousel({
 			center: true,
 			loop: true,

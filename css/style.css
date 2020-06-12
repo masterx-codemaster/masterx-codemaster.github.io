@@ -8462,7 +8462,7 @@ h1, h2, h3, h4, h5,
           font-size: 80px;
           color: #c8a97e;
           font-weight: normal;
-          font-family: "Great Vibes", cursive;
+          font-family: "Great Vibes", cursive !important; 
           margin-bottom: 0;
           line-height: 1; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
