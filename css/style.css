@@ -9789,3 +9789,38 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* ============================================================ */
+.for-mobile {
+  display: none;
+}
+
+.for-desktop {
+  display: inline;
+}
+
+@media only screen and (orientation: portrait) {
+  .for-mobile {
+    display: inline;
+  }
+  .for-desktop {
+    display: none;
+  }
+}
+
+.get-started {
+  background: #c8a97e;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0.5rem 1rem; }
+.get-started:hover, .get-started:focus {
+  text-decoration: none;
+  color: white; }
+.get-started.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default; }
+/* ============================================================ */
