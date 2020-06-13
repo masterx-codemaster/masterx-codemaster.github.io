@@ -1,9 +1,6 @@
 
-//var CACHE_STATIC_NAME = 'static-champagne';
-//var CACHE_DYNAMIC_NAME = 'dynamic-tequilla';
-
-var CACHE_STATIC_NAME = 'static-vodka-v4';
-var CACHE_DYNAMIC_NAME = 'dynamic-tequilla-v4';
+var CACHE_STATIC_NAME = 'static-champagne';
+var CACHE_DYNAMIC_NAME = 'dynamic-tequilla';
 
 self.addEventListener('install', function (event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
