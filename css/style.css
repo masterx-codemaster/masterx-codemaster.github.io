@@ -8780,13 +8780,13 @@ h1, h2, h3, h4, h5,
       padding: 10px !important;
       border-radius: 0;
       margin-bottom: 0;
-      color: #000000;
+      color: #fff;
       font-size: 20px;
       font-weight: 600;
       position: relative;
       display: inline-block;
       border: 1px solid transparent;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.5);
       width: 16.6%;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
@@ -9215,7 +9215,8 @@ textarea.form-control {
     color: #c8a97e; }
 
 #map {
-  width: 100%; }
+  width: 100%;
+background: #fff; }
   @media (max-width: 767.98px) {
     #map {
       height: 300px; } }
@@ -9835,13 +9836,13 @@ textarea.form-control {
 
 .bg-dark-custom {
   color: #fff;
-  background-color: #161616; }
+  background-color: #161616 !important; }
 .bg-light-custom {
   color: #fff;
-  background-color: #c8a97e;
+  background-color: #c8a97e !important;
   /* background-color: #8f8362; */ }
 .bg-transparent {
-  background-color: transparent; }
+  background-color: transparent !important; }
 
 .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: auto; 
