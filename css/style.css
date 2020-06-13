@@ -57,7 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #161616; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8856,7 +8856,8 @@ h1, h2, h3, h4, h5,
   .menus .text {
     width: 50%;
     padding: 30px 20px;
-    border: 1px solid #e6e6e6; }
+    border: 1px solid #e6e6e6;
+    background-color: #f8f9fa; }
     @media (max-width: 767.98px) {
       .menus .text {
         width: 100%; } }
@@ -8893,21 +8894,26 @@ h1, h2, h3, h4, h5,
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+.staff:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1.0); }
   .staff .img {
     height: 320px;
     background-position: top center;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    border-radius: 5px; }
+    border-radius: 5px 5px 0 0; }
   .staff .text {
     background: #fff;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 0 0 5px 5px; }
     .staff .text h3 {
       font-size: 18px;
       margin-bottom: 0;
@@ -8928,7 +8934,9 @@ h1, h2, h3, h4, h5,
           opacity: 1; } }
 
 .ftco-social {
-  padding: 0; }
+  padding: 0;
+  align-items: center;
+  justify-content: center; }
   .ftco-social li {
     list-style: none;
     margin-right: 10px; }
@@ -9083,7 +9091,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   background: #141313;
-  padding: 6em 0; }
+  padding: 6em 0 0 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
@@ -9348,7 +9356,8 @@ textarea.form-control {
       height: 10px;
       margin: 5px;
       border-radius: 50%;
-      background: rgba(0, 0, 0, 0.2); }
+      /* background: rgba(0, 0, 0, 0.2); */
+      background: #fff; }
       .testimony-section .owl-dots .owl-dot.active {
         background: #c8a97e; }
 
@@ -9379,7 +9388,7 @@ textarea.form-control {
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 0;
-    color: #000000; }
+    color: #c8a97e; }
   .testimony-wrap .position {
     font-size: 12px;
     text-transform: uppercase;
@@ -9823,4 +9832,14 @@ textarea.form-control {
   color: #6c757d;
   pointer-events: none;
   cursor: default; }
+
+.bg-dark-custom {
+  color: #fff;
+  background-color: #161616; }
+.bg-light-custom {
+  color: #fff;
+  background-color: #c8a97e;
+  /* background-color: #8f8362; */ }
+.bg-transparent {
+  background-color: transparent; }
 /* ============================================================ */

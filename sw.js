@@ -1,6 +1,9 @@
 
-var CACHE_STATIC_NAME = 'static-v1';
-var CACHE_DYNAMIC_NAME = 'dynamic-v1';
+//var CACHE_STATIC_NAME = 'static-champagne';
+//var CACHE_DYNAMIC_NAME = 'dynamic-tequilla';
+
+var CACHE_STATIC_NAME = 'static-vodka-v4';
+var CACHE_DYNAMIC_NAME = 'dynamic-tequilla-v4';
 
 self.addEventListener('install', function (event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
@@ -98,3 +101,8 @@ self.addEventListener('fetch', function (event) {
       })
   );
 });
+
+/*
+U : elgastronomo.resto@gmail.com
+P : El Gastronomo 2020
+*/
