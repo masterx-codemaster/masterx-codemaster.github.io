@@ -9842,4 +9842,7 @@ textarea.form-control {
   /* background-color: #8f8362; */ }
 .bg-transparent {
   background-color: transparent; }
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: auto; touch-action: auto; }
 /* ============================================================ */
