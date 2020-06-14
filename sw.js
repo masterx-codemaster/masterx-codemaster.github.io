@@ -8,9 +8,28 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_STATIC_NAME)
       .then(function (cache) {
-        console.log('[Service Worker] Precaching App Shell');
+        console.log('[Service Worker] Precaching App Shell ...');
         cache.addAll([
           '/',
+          /* -- Start Loading Core Files -- */
+          'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900',
+          '/fonts/great-vibes/great-vibes.ttf',
+          '/fonts/great-vibes/great-vibes.woff',
+          '/fonts/great-vibes/great-vibes.woff2',
+          '/css/great-vibes.css',
+          '/css/style.css',
+
+          '/images/bg_1.jpg',
+          '/images/bg_2.jpg',
+          '/images/bg_3.jpg',
+          '/images/bg_4.jpg',
+          '/images/bg_5.jpg',
+
+          '/index.html',
+          '/offline.html',
+          '/manifest.json',
+          /* -- End Loading Core Files -- */
+
           '/css/open-iconic-bootstrap.min.css',
           '/css/animate.css',
           '/css/owl.carousel.min.css',
@@ -22,7 +41,6 @@ self.addEventListener('install', function (event) {
           '/css/jquery.timepicker.css',
           '/css/flaticon.css',
           '/css/icomoon.css',
-          '/css/style.css',
 
           '/js/jquery.min.js',
           '/js/jquery-migrate-3.0.1.min.js',
@@ -38,23 +56,11 @@ self.addEventListener('install', function (event) {
           '/js/bootstrap-datepicker.js',
           '/js/jquery.timepicker.min.js',
           '/js/scrollax.min.js',
-          '/js/google-map.js',
-          '/js/main.js',
-
-          '/index.html',
-          '/offline.html',
-          '/manifest.json',
-
-          '/images/bg_2.jpg',
-          '/css/great-vibes.css',
-          '/fonts/great-vibes/great-vibes.ttf',
-          '/fonts/great-vibes/great-vibes.woff',
-          '/fonts/great-vibes/great-vibes.woff2',
-          'https://fonts.googleapis.com/css?family=Great+Vibes&display=swap',
-          'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900'
+          '/js/main.js'
         ]);
       })
   )
+  console.log('[Service Worker] Installed!');
 });
 
 self.addEventListener('activate', function (event) {
@@ -64,12 +70,13 @@ self.addEventListener('activate', function (event) {
       .then(function (keyList) {
         return Promise.all(keyList.map(function (key) {
           if (key !== CACHE_STATIC_NAME && key !== CACHE_DYNAMIC_NAME) {
-            console.log('[Service Worker] Removing old cache.', key);
+            console.log('[Service Worker] Removing old cache ....', key);
             return caches.delete(key);
           }
         }));
       })
   );
+  console.log('[Service Worker] Activated!');
   return self.clients.claim();
 });
 
@@ -102,4 +109,10 @@ self.addEventListener('fetch', function (event) {
 /*
 U : elgastronomo.resto@gmail.com
 P : El Gastronomo 2020
+
+Deleted Mapping :
+[1] ./css/aos.css
+[2] ./js/aos.js
+[3] ./js/bootstrap.min.js
+[4] ./js/popper.min.js
 */
